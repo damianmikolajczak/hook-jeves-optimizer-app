@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DA6E8C726124C02003B4BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6E8C626124C02003B4BBB /* AppDelegate.swift */; };
+		2DA6E8C926124C02003B4BBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6E8C826124C02003B4BBB /* ViewController.swift */; };
+		2DA6E8CB26124C04003B4BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA6E8CA26124C04003B4BBB /* Assets.xcassets */; };
+		2DA6E8CE26124C05003B4BBB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2DA6E8CC26124C05003B4BBB /* Main.storyboard */; };
+		2DA6E8DA26124C05003B4BBB /* Hook___Jeves_optimazerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6E8D926124C05003B4BBB /* Hook___Jeves_optimazerTests.swift */; };
+		2DA6E8E526124C05003B4BBB /* Hook___Jeves_optimazerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6E8E426124C05003B4BBB /* Hook___Jeves_optimazerUITests.swift */; };
+		2DA6E8F626124DB8003B4BBB /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6E8F526124DB8003B4BBB /* Point.swift */; };
+		2DA6E8FB2612742D003B4BBB /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6E8FA2612742D003B4BBB /* GraphView.swift */; };
+		2DA6E9012612B79F003B4BBB /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6E9002612B79E003B4BBB /* GraphViewController.swift */; };
+		2DA6E90B26139C97003B4BBB /* OptimazerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6E90A26139C97003B4BBB /* OptimazerModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2DA6E8D626124C05003B4BBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DA6E8BB26124C02003B4BBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DA6E8C226124C02003B4BBB;
+			remoteInfo = "Hook - Jeves optimazer";
+		};
+		2DA6E8E126124C05003B4BBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2DA6E8BB26124C02003B4BBB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DA6E8C226124C02003B4BBB;
+			remoteInfo = "Hook - Jeves optimazer";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2DA6E8C326124C02003B4BBB /* Hook - Jeves optimazer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hook - Jeves optimazer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA6E8C626124C02003B4BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2DA6E8C826124C02003B4BBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2DA6E8CA26124C04003B4BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2DA6E8CD26124C05003B4BBB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2DA6E8CF26124C05003B4BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA6E8D026124C05003B4BBB /* Hook___Jeves_optimazer.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hook___Jeves_optimazer.entitlements"; sourceTree = "<group>"; };
+		2DA6E8D526124C05003B4BBB /* Hook - Jeves optimazerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hook - Jeves optimazerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA6E8D926124C05003B4BBB /* Hook___Jeves_optimazerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hook___Jeves_optimazerTests.swift"; sourceTree = "<group>"; };
+		2DA6E8DB26124C05003B4BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA6E8E026124C05003B4BBB /* Hook - Jeves optimazerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Hook - Jeves optimazerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DA6E8E426124C05003B4BBB /* Hook___Jeves_optimazerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Hook___Jeves_optimazerUITests.swift"; sourceTree = "<group>"; };
+		2DA6E8E626124C05003B4BBB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2DA6E8F526124DB8003B4BBB /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		2DA6E8FA2612742D003B4BBB /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
+		2DA6E9002612B79E003B4BBB /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
+		2DA6E90A26139C97003B4BBB /* OptimazerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimazerModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DA6E8C026124C02003B4BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA6E8D226124C05003B4BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA6E8DD26124C05003B4BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DA6E8BA26124C02003B4BBB = {
+			isa = PBXGroup;
+			children = (
+				2DA6E8C526124C02003B4BBB /* Hook - Jeves optimazer */,
+				2DA6E8D826124C05003B4BBB /* Hook - Jeves optimazerTests */,
+				2DA6E8E326124C05003B4BBB /* Hook - Jeves optimazerUITests */,
+				2DA6E8C426124C02003B4BBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DA6E8C426124C02003B4BBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DA6E8C326124C02003B4BBB /* Hook - Jeves optimazer.app */,
+				2DA6E8D526124C05003B4BBB /* Hook - Jeves optimazerTests.xctest */,
+				2DA6E8E026124C05003B4BBB /* Hook - Jeves optimazerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DA6E8C526124C02003B4BBB /* Hook - Jeves optimazer */ = {
+			isa = PBXGroup;
+			children = (
+				2DA6E8C626124C02003B4BBB /* AppDelegate.swift */,
+				2DA6E8C826124C02003B4BBB /* ViewController.swift */,
+				2DA6E8F526124DB8003B4BBB /* Point.swift */,
+				2DA6E8CA26124C04003B4BBB /* Assets.xcassets */,
+				2DA6E8CC26124C05003B4BBB /* Main.storyboard */,
+				2DA6E9002612B79E003B4BBB /* GraphViewController.swift */,
+				2DA6E8FA2612742D003B4BBB /* GraphView.swift */,
+				2DA6E90A26139C97003B4BBB /* OptimazerModel.swift */,
+				2DA6E8CF26124C05003B4BBB /* Info.plist */,
+				2DA6E8D026124C05003B4BBB /* Hook___Jeves_optimazer.entitlements */,
+			);
+			path = "Hook - Jeves optimazer";
+			sourceTree = "<group>";
+		};
+		2DA6E8D826124C05003B4BBB /* Hook - Jeves optimazerTests */ = {
+			isa = PBXGroup;
+			children = (
+				2DA6E8D926124C05003B4BBB /* Hook___Jeves_optimazerTests.swift */,
+				2DA6E8DB26124C05003B4BBB /* Info.plist */,
+			);
+			path = "Hook - Jeves optimazerTests";
+			sourceTree = "<group>";
+		};
+		2DA6E8E326124C05003B4BBB /* Hook - Jeves optimazerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2DA6E8E426124C05003B4BBB /* Hook___Jeves_optimazerUITests.swift */,
+				2DA6E8E626124C05003B4BBB /* Info.plist */,
+			);
+			path = "Hook - Jeves optimazerUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DA6E8C226124C02003B4BBB /* Hook - Jeves optimazer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA6E8E926124C05003B4BBB /* Build configuration list for PBXNativeTarget "Hook - Jeves optimazer" */;
+			buildPhases = (
+				2DA6E8BF26124C02003B4BBB /* Sources */,
+				2DA6E8C026124C02003B4BBB /* Frameworks */,
+				2DA6E8C126124C02003B4BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hook - Jeves optimazer";
+			productName = "Hook - Jeves optimazer";
+			productReference = 2DA6E8C326124C02003B4BBB /* Hook - Jeves optimazer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2DA6E8D426124C05003B4BBB /* Hook - Jeves optimazerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA6E8EC26124C05003B4BBB /* Build configuration list for PBXNativeTarget "Hook - Jeves optimazerTests" */;
+			buildPhases = (
+				2DA6E8D126124C05003B4BBB /* Sources */,
+				2DA6E8D226124C05003B4BBB /* Frameworks */,
+				2DA6E8D326124C05003B4BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DA6E8D726124C05003B4BBB /* PBXTargetDependency */,
+			);
+			name = "Hook - Jeves optimazerTests";
+			productName = "Hook - Jeves optimazerTests";
+			productReference = 2DA6E8D526124C05003B4BBB /* Hook - Jeves optimazerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2DA6E8DF26124C05003B4BBB /* Hook - Jeves optimazerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DA6E8EF26124C05003B4BBB /* Build configuration list for PBXNativeTarget "Hook - Jeves optimazerUITests" */;
+			buildPhases = (
+				2DA6E8DC26124C05003B4BBB /* Sources */,
+				2DA6E8DD26124C05003B4BBB /* Frameworks */,
+				2DA6E8DE26124C05003B4BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2DA6E8E226124C05003B4BBB /* PBXTargetDependency */,
+			);
+			name = "Hook - Jeves optimazerUITests";
+			productName = "Hook - Jeves optimazerUITests";
+			productReference = 2DA6E8E026124C05003B4BBB /* Hook - Jeves optimazerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DA6E8BB26124C02003B4BBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					2DA6E8C226124C02003B4BBB = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					2DA6E8D426124C05003B4BBB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 2DA6E8C226124C02003B4BBB;
+					};
+					2DA6E8DF26124C05003B4BBB = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 2DA6E8C226124C02003B4BBB;
+					};
+				};
+			};
+			buildConfigurationList = 2DA6E8BE26124C02003B4BBB /* Build configuration list for PBXProject "Hook - Jeves optimazer" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2DA6E8BA26124C02003B4BBB;
+			productRefGroup = 2DA6E8C426124C02003B4BBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DA6E8C226124C02003B4BBB /* Hook - Jeves optimazer */,
+				2DA6E8D426124C05003B4BBB /* Hook - Jeves optimazerTests */,
+				2DA6E8DF26124C05003B4BBB /* Hook - Jeves optimazerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DA6E8C126124C02003B4BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA6E8CB26124C04003B4BBB /* Assets.xcassets in Resources */,
+				2DA6E8CE26124C05003B4BBB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA6E8D326124C05003B4BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA6E8DE26124C05003B4BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DA6E8BF26124C02003B4BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA6E8C926124C02003B4BBB /* ViewController.swift in Sources */,
+				2DA6E9012612B79F003B4BBB /* GraphViewController.swift in Sources */,
+				2DA6E8C726124C02003B4BBB /* AppDelegate.swift in Sources */,
+				2DA6E8F626124DB8003B4BBB /* Point.swift in Sources */,
+				2DA6E8FB2612742D003B4BBB /* GraphView.swift in Sources */,
+				2DA6E90B26139C97003B4BBB /* OptimazerModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA6E8D126124C05003B4BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA6E8DA26124C05003B4BBB /* Hook___Jeves_optimazerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2DA6E8DC26124C05003B4BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DA6E8E526124C05003B4BBB /* Hook___Jeves_optimazerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2DA6E8D726124C05003B4BBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DA6E8C226124C02003B4BBB /* Hook - Jeves optimazer */;
+			targetProxy = 2DA6E8D626124C05003B4BBB /* PBXContainerItemProxy */;
+		};
+		2DA6E8E226124C05003B4BBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2DA6E8C226124C02003B4BBB /* Hook - Jeves optimazer */;
+			targetProxy = 2DA6E8E126124C05003B4BBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2DA6E8CC26124C05003B4BBB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DA6E8CD26124C05003B4BBB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DA6E8E726124C05003B4BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2DA6E8E826124C05003B4BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		2DA6E8EA26124C05003B4BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hook - Jeves optimazer/Hook___Jeves_optimazer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LP6JG8Y485;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Hook - Jeves optimazer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "home.Hook---Jeves-optimazer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2DA6E8EB26124C05003B4BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hook - Jeves optimazer/Hook___Jeves_optimazer.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LP6JG8Y485;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = "Hook - Jeves optimazer/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "home.Hook---Jeves-optimazer";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2DA6E8ED26124C05003B4BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LP6JG8Y485;
+				INFOPLIST_FILE = "Hook - Jeves optimazerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "home.Hook---Jeves-optimazerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hook - Jeves optimazer.app/Contents/MacOS/Hook - Jeves optimazer";
+			};
+			name = Debug;
+		};
+		2DA6E8EE26124C05003B4BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LP6JG8Y485;
+				INFOPLIST_FILE = "Hook - Jeves optimazerTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "home.Hook---Jeves-optimazerTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hook - Jeves optimazer.app/Contents/MacOS/Hook - Jeves optimazer";
+			};
+			name = Release;
+		};
+		2DA6E8F026124C05003B4BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LP6JG8Y485;
+				INFOPLIST_FILE = "Hook - Jeves optimazerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "home.Hook---Jeves-optimazerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Hook - Jeves optimazer";
+			};
+			name = Debug;
+		};
+		2DA6E8F126124C05003B4BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = LP6JG8Y485;
+				INFOPLIST_FILE = "Hook - Jeves optimazerUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "home.Hook---Jeves-optimazerUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Hook - Jeves optimazer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DA6E8BE26124C02003B4BBB /* Build configuration list for PBXProject "Hook - Jeves optimazer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA6E8E726124C05003B4BBB /* Debug */,
+				2DA6E8E826124C05003B4BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA6E8E926124C05003B4BBB /* Build configuration list for PBXNativeTarget "Hook - Jeves optimazer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA6E8EA26124C05003B4BBB /* Debug */,
+				2DA6E8EB26124C05003B4BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA6E8EC26124C05003B4BBB /* Build configuration list for PBXNativeTarget "Hook - Jeves optimazerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA6E8ED26124C05003B4BBB /* Debug */,
+				2DA6E8EE26124C05003B4BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DA6E8EF26124C05003B4BBB /* Build configuration list for PBXNativeTarget "Hook - Jeves optimazerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DA6E8F026124C05003B4BBB /* Debug */,
+				2DA6E8F126124C05003B4BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DA6E8BB26124C02003B4BBB /* Project object */;
+}
