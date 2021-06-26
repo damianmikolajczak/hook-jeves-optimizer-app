@@ -20,7 +20,7 @@ class ViewController: NSViewController {
     @IBOutlet var solutionTextX2: NSTextField!
     @IBOutlet var solutionTextValue: NSTextField!
     
-    let sourceData = ["Himmemblau", "Paraloid"]
+    let sourceData = ["Himmemblau", "Paraloid", "Matyas", "Ackley", "Cross-in-tray", "Funk. z zaj."]
     var foundedPoints = [Point]()
 
     
@@ -31,6 +31,14 @@ class ViewController: NSViewController {
     override func prepare(for segue: NSStoryboardSegue, sender: Any?) {
         let vc = segue.destinationController as! GraphViewController
         vc.points = foundedPoints
+        vc.optimizedFunction = selectFunctionBox.indexOfSelectedItem
+    }
+    
+    @IBAction func getRandomStartPoint(sender: NSButton) {
+        let x1 = Double.random(in: -5...5)
+        let x2 = Double.random(in: -5...5)
+        startPointX1.doubleValue = x1
+        startPointX2.doubleValue = x2
     }
     
     @IBAction func searchButtonClicked(sender: NSButton) {
@@ -44,16 +52,15 @@ class ViewController: NSViewController {
         let function = selectFunctionBox.indexOfSelectedItem
         let result: (point: Point, value: Double, storedPoints: [Point])
         
-        var hookJavesOptimizer = HookJavesOptimazer(onDirectionBase: directionsBase, forFunction: function, withStep: step, andBeta: beta, andAccuracy: sigma, andArgument: x, storedTo: foundedPoints)
+        var hookJavesOptimizer = HookJavesOptimazer(onDirectionBase: directionsBase, forFunction: function, withStep: step, andBeta: beta, andAccuracy: sigma, andArgument: x, storedTo: foundedPoints, in: statusBox)
         
         result = hookJavesOptimizer.startOptimazer()
         
-        solutionTextX1.stringValue = "\(result.point.x1)"
-        solutionTextX2.stringValue = "\(result.point.x2)"
-        solutionTextValue.stringValue = "\(result.value)"
+        solutionTextX1.stringValue = String(format: "%5.5f", result.point.x1)
+        solutionTextX2.stringValue = String(format: "%5.5f", result.point.x2)
+        solutionTextValue.stringValue = String(format: "%5.5f", result.value)
         foundedPoints = result.storedPoints
-        
-        print(foundedPoints)
+
     }
     
     override func viewDidLoad() {

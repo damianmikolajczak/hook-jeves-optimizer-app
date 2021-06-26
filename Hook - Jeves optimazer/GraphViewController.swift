@@ -11,9 +11,11 @@ class GraphViewController: NSViewController {
     
     @IBOutlet var graph: GraphView!
     var points: [Point]?
+    var optimizedFunction: Int?
     
     override func viewDidLoad() {
         graph.points = self.points
+        graph.optimizedFunction = self.optimizedFunction
     }
 
     override var representedObject: Any? {

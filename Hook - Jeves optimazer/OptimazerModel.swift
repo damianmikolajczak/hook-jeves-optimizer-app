@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Cocoa
 
 struct HookJavesOptimazer {
     
@@ -16,8 +17,9 @@ struct HookJavesOptimazer {
     let sigma: Double
     var argument: Point
     var foundedPoints: [Point]
+    var statusBox: NSView!
     
-    init(onDirectionBase base: [Point], forFunction function: Int, withStep step: Double, andBeta beta: Double, andAccuracy sigma: Double, andArgument x: Point, storedTo points: [Point] ) {
+    init(onDirectionBase base: [Point], forFunction function: Int, withStep step: Double, andBeta beta: Double, andAccuracy sigma: Double, andArgument x: Point, storedTo points: [Point], in statusBox: NSView ) {
         self.optimizedFunction = function
         self.directionsBase = base
         self.step = step
@@ -25,16 +27,26 @@ struct HookJavesOptimazer {
         self.sigma = sigma
         self.argument = x
         self.foundedPoints = points
+        self.statusBox = statusBox
     }
     
     func f(_ X: Point) -> Double{
         switch optimizedFunction {
         case 0:
-            //Funkcja Himmemblau:
+            //Funkcja Himmemblaua:
             return (X.x1*X.x1+X.x2-11)*(X.x1*X.x1+X.x2-11)+(X.x1+X.x2*X.x2-7)*(X.x1+X.x2*X.x2-7)
         case 1:
             //Funkcja paraloidy:
             return 1+(X.x1+1)*(X.x1+1)+X.x2*X.x2
+        case 2:
+            //Funkcja Matyasa:
+            return 0.26*(X.x1*X.x1+X.x2*X.x2)-0.48*X.x1*X.x2
+        case 3:
+            //Funkcja Ackleya:
+            return -20*exp(-0.2*sqrt(0.5*(X.x1*X.x1+X.x2*X.x2)))-exp(0.5*(cos(2*Double.pi*X.x1)+cos(2*Double.pi*X.x2)))+exp(1)+20
+        case 4:
+            //Funkcja Cross-in-tray:
+            return -0.0001*pow((abs(sin(X.x1)*sin(X.x2)*exp(abs(100-(sqrt(X.x1*X.x1+X.x2*X.x2))/Double.pi)))+1), 0.1)
         default:
             //Funkcja z zajęć
             return 2*(X.x1*X.x1)+(X.x2*X.x2)+(X.x1*X.x2)
@@ -42,7 +54,7 @@ struct HookJavesOptimazer {
     }
 
     func searchPoint(currentBasePoint: Point) -> Point?{
-        //statusBox.insertText("Szukam punktu\n")
+        statusBox.insertText("Searching for new point\n")
         var basePoint = currentBasePoint
         var newBasePointFounded: Bool = false
         var nextPoint = Point(0,0)
@@ -71,7 +83,7 @@ struct HookJavesOptimazer {
 
     mutating func startOptimazer() -> (Point, Double, [Point]) {
         //Etap roboczy: statusBox.insertText("")
-        //statusBox.insertText("Wartość początkowa: \(f(x))\n\n")
+        statusBox.insertText("Start value: \(f(argument))\n\n")
         var iteration: Int = 0
         var direction = Point(0,0)
         foundedPoints.removeAll()
@@ -81,18 +93,23 @@ struct HookJavesOptimazer {
                 direction = (xB - argument)
                 argument = argument + direction
                 foundedPoints.append(argument)
-                //statusBox.insertText("Aktualny punkt: \(x)\n")
-                //statusBox.insertText("Wartość w aktualnym punkcie: \(f(x)) \n\n")
+                statusBox.insertText("Current point: \(argument)\n")
+                statusBox.insertText("Value in the current point: \(f(argument)) \n\n")
             } else {
                 argument = argument - direction
-                //statusBox.insertText("Cofam się do punktu: \(x)\n")
-                //statusBox.insertText("Zmniejszam krok\n\n")
+                statusBox.insertText("Move back to point: \(argument)\n")
+                statusBox.insertText("Decreasing step\n\n")
                 direction.x1 = 0
                 direction.x2 = 0
                 step = step * beta
             }
             iteration += 1
         }
+        statusBox.insertText("Search is complete.\nA solution was finded in point: \(argument) with a value of f(X) = \(f(argument))\n")
+        statusBox.insertText("The task took \(iteration) iterations.")
         return (argument, f(argument), foundedPoints)
     }
 }
+
+
+

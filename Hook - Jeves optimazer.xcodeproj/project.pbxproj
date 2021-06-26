@@ -17,6 +17,7 @@
 		2DA6E8FB2612742D003B4BBB /* GraphView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6E8FA2612742D003B4BBB /* GraphView.swift */; };
 		2DA6E9012612B79F003B4BBB /* GraphViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6E9002612B79E003B4BBB /* GraphViewController.swift */; };
 		2DA6E90B26139C97003B4BBB /* OptimazerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6E90A26139C97003B4BBB /* OptimazerModel.swift */; };
+		2DE9829B2621E62600DF0F99 /* GridCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DE9829A2621E62600DF0F99 /* GridCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		2DA6E8FA2612742D003B4BBB /* GraphView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 		2DA6E9002612B79E003B4BBB /* GraphViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphViewController.swift; sourceTree = "<group>"; };
 		2DA6E90A26139C97003B4BBB /* OptimazerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptimazerModel.swift; sourceTree = "<group>"; };
+		2DE9829A2621E62600DF0F99 /* GridCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				2DA6E8CC26124C05003B4BBB /* Main.storyboard */,
 				2DA6E9002612B79E003B4BBB /* GraphViewController.swift */,
 				2DA6E8FA2612742D003B4BBB /* GraphView.swift */,
+				2DE9829A2621E62600DF0F99 /* GridCell.swift */,
 				2DA6E90A26139C97003B4BBB /* OptimazerModel.swift */,
 				2DA6E8CF26124C05003B4BBB /* Info.plist */,
 				2DA6E8D026124C05003B4BBB /* Hook___Jeves_optimazer.entitlements */,
@@ -268,6 +271,7 @@
 				2DA6E8C926124C02003B4BBB /* ViewController.swift in Sources */,
 				2DA6E9012612B79F003B4BBB /* GraphViewController.swift in Sources */,
 				2DA6E8C726124C02003B4BBB /* AppDelegate.swift in Sources */,
+				2DE9829B2621E62600DF0F99 /* GridCell.swift in Sources */,
 				2DA6E8F626124DB8003B4BBB /* Point.swift in Sources */,
 				2DA6E8FB2612742D003B4BBB /* GraphView.swift in Sources */,
 				2DA6E90B26139C97003B4BBB /* OptimazerModel.swift in Sources */,
