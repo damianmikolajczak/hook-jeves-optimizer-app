@@ -11,6 +11,7 @@
 		2D9485EC2687392000F8557B /* chooseFunction.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9485E82687392000F8557B /* chooseFunction.png */; };
 		2D9485ED2687392000F8557B /* graph.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9485E92687392000F8557B /* graph.png */; };
 		2D9485EE2687392000F8557B /* printResults.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9485EA2687392000F8557B /* printResults.png */; };
+		2D9485F026873FFB00F8557B /* Algorithm.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9485EF26873FFB00F8557B /* Algorithm.png */; };
 		2DA6E8C726124C02003B4BBB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6E8C626124C02003B4BBB /* AppDelegate.swift */; };
 		2DA6E8C926124C02003B4BBB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA6E8C826124C02003B4BBB /* ViewController.swift */; };
 		2DA6E8CB26124C04003B4BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2DA6E8CA26124C04003B4BBB /* Assets.xcassets */; };
@@ -46,6 +47,7 @@
 		2D9485E82687392000F8557B /* chooseFunction.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chooseFunction.png; sourceTree = "<group>"; };
 		2D9485E92687392000F8557B /* graph.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = graph.png; sourceTree = "<group>"; };
 		2D9485EA2687392000F8557B /* printResults.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = printResults.png; sourceTree = "<group>"; };
+		2D9485EF26873FFB00F8557B /* Algorithm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Algorithm.png; sourceTree = "<group>"; };
 		2DA6E8C326124C02003B4BBB /* Hook - Jeves optimazer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hook - Jeves optimazer.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA6E8C626124C02003B4BBB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2DA6E8C826124C02003B4BBB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 			children = (
 				2D9485E72687392000F8557B /* startPoint.png */,
 				2D9485E82687392000F8557B /* chooseFunction.png */,
+				2D9485EF26873FFB00F8557B /* Algorithm.png */,
 				2D9485EA2687392000F8557B /* printResults.png */,
 				2D9485E92687392000F8557B /* graph.png */,
 			);
@@ -266,6 +269,7 @@
 				2D9485EB2687392000F8557B /* startPoint.png in Resources */,
 				2D9485ED2687392000F8557B /* graph.png in Resources */,
 				2D9485EC2687392000F8557B /* chooseFunction.png in Resources */,
+				2D9485F026873FFB00F8557B /* Algorithm.png in Resources */,
 				2DA6E8CE26124C05003B4BBB /* Main.storyboard in Resources */,
 				2D9485EE2687392000F8557B /* printResults.png in Resources */,
 			);
