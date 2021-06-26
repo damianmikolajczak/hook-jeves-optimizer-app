@@ -14,7 +14,7 @@ The last thing to do is to choose the optimized function from a fixed list - thi
 Hitting the "Search" labeled button will print the result in the "Founded solution" section.
 There will be a log list in the right area appear which shows all of the done steps.
 
-<img src="Hook%20-%20Jeves%20optimazer/Images/startPoint.png" width="330"> <img src="Hook%20-%20Jeves%20optimazer/Images/startPoint.png" width="330"> <img src="Hook%20-%20Jeves%20optimazer/Images/startPoint.png" width="330">
+<img src="Hook%20-%20Jeves%20optimazer/Images/startPoint.png" width="325"> <img src="Hook%20-%20Jeves%20optimazer/Images/chooseFunction.png" width="325"> <img src="Hook%20-%20Jeves%20optimazer/Images/printResults.png" width="325">
 
 By clicking the "Show result" button, a view with a cartesian system will appear.
 The user can then see the optimized function itself together with the path the point was traveled.
