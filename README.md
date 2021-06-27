@@ -27,7 +27,7 @@ The implemented algorithm is shown at the picture below
 
 <img src="Hook%20-%20Jeves%20optimazer/Images/Algorithm.png" width="500">
 
-The program implementation was defined in the OptimizerModel.Swift file.
+The programmatic implementation was defined in the OptimizerModel.Swift file.
 
 ```swift
 // This function is used to search for the next base point. First of all, a log is added that the program started searching.
